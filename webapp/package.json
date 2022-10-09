@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:local": "ng serve --aot --host 0.0.0.0 --proxy-config proxy.conf.json"
+    "start:local": "ng serve --aot --host 0.0.0.0 --proxy-config proxy.conf.json",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -17,7 +19,7 @@
     "@angular/cdk": "^7.3.3",
     "@angular/common": "^8.0.2",
     "@angular/compiler": "^8.0.2",
-    "@angular/core": "^8.0.2",
+    "@angular/core": "^11.0.5",
     "@angular/forms": "^8.0.2",
     "@angular/http": "^7.2.6",
     "@angular/material": "^7.3.3",
@@ -26,17 +28,18 @@
     "@angular/platform-server": "^8.0.2",
     "@angular/router": "^8.0.2",
     "@ng-bootstrap/ng-bootstrap": "^4.0.1",
-    "@schematics/angular": "^7.1.4",
+    "@schematics/angular": "^8.3.29",
     "awesome-bootstrap-checkbox": "^1.0.1",
     "bootstrap": "^4.3.1",
     "core-js": "^2.6.1",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
-    "moment": "^2.23.0",
+    "jquery": "^3.5.0",
+    "moment": "^2.29.4",
     "popper.js": "^1.14.6",
     "rxjs": "^6.5.2",
-    "webpack-dev-server": "^3.7.2",
-    "zone.js": "^0.9.1"
+    "webpack-dev-server": "^4.0.0",
+    "zone.js": "^0.9.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.3",
@@ -59,5 +62,6 @@
     "ts-node": "~7.0.1",
     "tslint": "~5.12.0",
     "typescript": "3.4.5"
-  }
+  },
+  "snyk": true
 }
