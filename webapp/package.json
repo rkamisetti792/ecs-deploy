@@ -35,7 +35,7 @@
     "moment": "^2.23.0",
     "popper.js": "^1.14.6",
     "rxjs": "^6.5.2",
-    "webpack-dev-server": "^3.7.2",
+    "webpack-dev-server": "^4.0.0",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
